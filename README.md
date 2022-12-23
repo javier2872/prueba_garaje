@@ -23,7 +23,7 @@
   En el caso de ocurrir un bug, este se vería reflejado en los reports de Cucumber. Se analizaría porque es debido, se pondría un texto explicativo del bug, una captura de pantalla de donde ha ocurrido y las trazas de error procedentes del servidor donde se ejecuta la web y las del browser.
 
 
-##Ejercicio 1
+##Ejercicio 2
 
    **Pasos:**
    

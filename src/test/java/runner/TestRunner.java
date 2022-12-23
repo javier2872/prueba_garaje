@@ -12,7 +12,7 @@ import io.cucumber.testng.CucumberOptions;
         glue = {"steps_definitions"},
         //which tags in feature file should execute
         //tags = {"@Login","@SelectMadrid"},
-        tags = "@E20",
+        tags = "@ALL_TESTS",
         // its mean that the console output for cucumber test are much more
         // readable
         monochrome = true,
