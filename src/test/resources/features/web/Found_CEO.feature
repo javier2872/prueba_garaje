@@ -1,5 +1,5 @@
 @ALL_TESTS
-@FOUND_CEO
+@FOUND_CEO @WEB
 Feature: Look for the CEO Alberto Barrio
   As a regular user
   I want to look for Alberto Barrio

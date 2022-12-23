@@ -1,4 +1,4 @@
-package steps_definitions;
+package steps_definitions.web;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -24,7 +24,7 @@ public class Hook {
         driver = aDriver;
     }
 
-    @Before
+    @Before("@WEB")
     public void setUp() {
         WebDriverManager.chromedriver().setup();
         setDriver(new ChromeDriver());
@@ -32,7 +32,7 @@ public class Hook {
         getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
     }
 
-    @After
+    @After("@WEB")
     public void teardown(Scenario aScenario) {
         if (getDriver() != null) {
             if (aScenario.isFailed()) {
