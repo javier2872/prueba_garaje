@@ -1,4 +1,5 @@
 package runner;
+
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
@@ -11,14 +12,14 @@ import io.cucumber.testng.CucumberOptions;
         glue = {"steps_definitions"},
         //which tags in feature file should execute
         //tags = {"@Login","@SelectMadrid"},
-        tags= "@FOUND_CEO",
+        tags = "@ALL_TESTS",
         // its mean that the console output for cucumber test are much more
         // readable
         monochrome = true,
         // that options used to specify different formatting options for the
         // outputs reports
-        plugin = { "html:target/cucumber-reports/cucumber-pretty","json:target/json-cucumber-reports/default/cukejson.json",
-                "testng:target/testng-cucumber-reports/cuketestng.xml" }
+        plugin = {"html:target/cucumber-reports/cucumber-pretty.html", "json:target/json-cucumber-reports/default/cukejson.json",
+                "testng:target/testng-cucumber-reports/cuketestng.xml"}
 
 )
 

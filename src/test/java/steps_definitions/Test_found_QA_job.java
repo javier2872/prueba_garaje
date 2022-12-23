@@ -1,14 +1,14 @@
 package steps_definitions;
 
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import page_objects.Page_index;
 import page_objects.Page_pop_up;
 import page_objects.Page_talento;
 import properties.Get_value_properties;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
-import org.openqa.selenium.WebDriver;
 
 public class Test_found_QA_job {
 
@@ -39,7 +39,7 @@ public class Test_found_QA_job {
     @Then("there is only one job offer for a QA Engineer")
     public void there_is_only_one_job_offer_for_a_qa_engineer() {
         Page_talento page_talento = new Page_talento(this.driver);
-        Assert.assertTrue(page_talento.one_QA_job_card(),"There is not a QA job");
+        Assert.assertTrue(page_talento.one_QA_job_card(), "There is not a QA job");
     }
 
 }

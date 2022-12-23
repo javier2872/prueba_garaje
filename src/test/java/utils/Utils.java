@@ -11,6 +11,7 @@ import java.time.Duration;
 public class Utils {
     /**
      * to wait clickable an element
+     *
      * @param aElement
      * @param aDriver
      */
@@ -18,8 +19,10 @@ public class Utils {
         WebDriverWait wait = new WebDriverWait(aDriver, Duration.ofSeconds(5));
         wait.until(ExpectedConditions.elementToBeClickable(aElement));
     }
+
     /**
      * to wait to an element
+     *
      * @param aElement
      * @param aDriver
      */
