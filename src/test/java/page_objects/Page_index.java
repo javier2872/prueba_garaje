@@ -25,6 +25,7 @@ public class Page_index {
         Utils.waitClickable(menu, this.driver);
         menu.click();
     }
+
     /**
      * Open section talent
      */

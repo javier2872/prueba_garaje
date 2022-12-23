@@ -19,7 +19,7 @@ public class Page_pop_up {
      */
     public void accept_all_cookies() {
         this.driver.findElement(COOKIES).isDisplayed();
-        WebElement button_accept_all= this.driver.findElement(ACCEPT_ALL_COOKIES);
+        WebElement button_accept_all = this.driver.findElement(ACCEPT_ALL_COOKIES);
         Utils.waitClickable(button_accept_all, this.driver);
         button_accept_all.click();
     }

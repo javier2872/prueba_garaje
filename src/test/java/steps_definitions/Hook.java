@@ -2,7 +2,10 @@ package steps_definitions;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -30,8 +33,13 @@ public class Hook {
     }
 
     @After
-    public void teardown() {
+    public void teardown(Scenario aScenario) {
         if (getDriver() != null) {
+            if (aScenario.isFailed()) {
+                final byte[] screenshot = ((TakesScreenshot) getDriver())
+                        .getScreenshotAs(OutputType.BYTES);
+                aScenario.attach(screenshot, "image/png", aScenario.getName()); //stick it in the report
+            }
             getDriver().quit();
         }
     }

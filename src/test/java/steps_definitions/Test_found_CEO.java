@@ -12,9 +12,10 @@ public class Test_found_CEO {
         Page_talento page_talento = new Page_talento(Hook.getDriver());
         page_talento.scroll_join_team();
     }
+
     @Then("the first member is Alberto Barrio, our beloved CEO")
     public void the_first_member_is_alberto_barrio_our_beloved_ceo() {
         Page_talento page_talento = new Page_talento(Hook.getDriver());
-        Assert.assertTrue(page_talento.alberto_barrio_member_CEO(),"Not found Alberto Barrio as CEO");
+        Assert.assertTrue(page_talento.alberto_barrio_member_CEO(), "Not found Alberto Barrio as CEO");
     }
 }
