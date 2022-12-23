@@ -1,5 +1,5 @@
 @ALL_TESTS
-@FOUND_JOB
+@FOUND_JOB @WEB
 Feature: Look for a job offer
   As a regular user
   I want to look for a job offer
