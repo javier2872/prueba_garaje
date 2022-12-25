@@ -11,10 +11,12 @@
    3. Clonar el proyecto.
        
    4. Importar como proyecto maven en un IDE.
+
+   5. Hacer $mvn install . Para instalar las dependencias.
    
-   5. Modificar el fichero "src/test/java/runner/TestRunner.java", tags="@WEB"
+   6. Modificar el fichero "src/test/java/runner/TestRunner.java", tags="@WEB"
        
-   6. Ejecutar el fichero "src/test/java/runner/TestRunner.java"
+   7. Ejecutar el fichero "src/test/java/runner/TestRunner.java"
     
    * los resultados se encontraran en target/cucumber-reports/cucumber-pretty.html
     
@@ -34,9 +36,11 @@
    3. Clonar el proyecto.
        
    4. Importar como proyecto maven en un IDE.
+
+   5. Hacer $mvn install . Para instalar las dependencias.
    
-   5. Modificar el fichero "src/test/java/runner/TestRunner.java", tags="@API"
+   6. Modificar el fichero "src/test/java/runner/TestRunner.java", tags="@API"
        
-   6. Ejecutar el fichero "src/test/java/runner/TestRunner.java"
+   7. Ejecutar el fichero "src/test/java/runner/TestRunner.java"
     
    * los resultados se encontraran en target/cucumber-reports/cucumber-pretty.html
